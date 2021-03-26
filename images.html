@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <script>
+    $('.url.example .ui.embed').embed();</script>
+    <meta charset="UTF-8">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+      <link rel="stylesheet" href="css/style.css">
+    <title>Manchester United</title>
+    </head>
+   <body id = "index">
+       <div class="ui stackable grid container">
+     <header class = "sixteen wide column">
+        
+            <h1>Manchester United</h1>
+         </header>
+           <br>
+<div id = "content" class = "ui row">
+    
+        <nav class="three wide column">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="team.html">Team</a></li>
+             <li><a href="tickets.html">Tickets</a></li>
+             <li><a href="aboutus.html">Information</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="images.html">Image Gallery</a></li>
+            </ul>
+       </nav>
+		  
+      <hr>
+	<main class="twelve wide column">
+		<p class = "pgallery">This is our image gallery, featuring our most up to date pictures!</p>
+<p class = "recent">Some images from our recent matches, click on the image you want to view to enlarge it.</p>
+	
+<div id="gallery1">
+  <a href="images/imgbruno.jpg" data-lightbox="player-1" title = "Bruno Fernandes Scores"><img src="images/thumbnail/imgbruno.jpg" width="120" height="90" alt="B Fernandes"></a>
+  <a href="images/imgighalo.jpg" data-lightbox="player-2" title = "Odion Ighalo"><img src="images/thumbnail/imgighalo.jpg" width="120" height="90" alt="Ighalo"></a>
+  <a href="images/imgrashford.jpg" data-lightbox="player-3" title = "Marus Rashford"><img src="images/thumbnail/imgrashford.jpg" width="120" height="90" alt="Rashford"></a>
+  <a href="images/imgcelebrate.jpg" data-lightbox="player-4" title = "Post-Win Celebrations"><img src="images/thumbnail/imgcelebrate.jpg" width="120" height="90" alt="Celebrations"></a>
+	</div>
+		<hr>
+		
+		<p class = "recent">Here are our most recent signings! You can also enlarge these.</p>
+		
+		<div id="gallery1">
+  <a href="images/imgbrunosign.jpg" data-lightbox="player-5" title = "Bruno Fernandes joins from Sporting CP."><img src="images/thumbnail/imgbrunosign.jpg" width="120" height="90" alt="B Fernandes"></a>
+  <a href="images/imgwillsign.jpg" data-lightbox="player-6" title = "Brandon Williams, youth player is called up to the first team."><img src="images/thumbnail/imgwillsign.jpg" width="120" height="90" alt="Williams"></a>
+  <a href="images/imgighalosign.jpg" data-lightbox="player-7" title = "Ighalo joins on a loan contract."><img src="images/thumbnail/imgighalosign.jpg" width="120" height="90" alt="Ighalo."></a>
+	</div>
+		<footer class="ui sixteen wide column">
+            <p>
+                Copyright 2019 Manchester United
+            </p>
+        </footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+$('#gallery1 img').css('opacity', 0.4);
+
+$('#gallery1 img').on({
+   mouseenter:function() {
+    $(this).css('opacity', 1);
+   },
+
+   mouseleave:function() {
+    $(this).css('opacity', 0.4);
+   }
+});
+});
+</script>
+	</main>
+		   
+</body>
+		   `
+</html>

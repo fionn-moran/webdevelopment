@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html  lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Information</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id = "index">
+	<div class="ui stackable grid container">
+     <header class = "sixteen wide column">
+         
+            <h1>Manchester United</h1>
+        
+         </header>
+           <hr>
+           <br>
+<div id = "content" class = "ui row">
+    
+       <nav class="three wide column">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="team.html">Team</a></li>
+             <li><a href="tickets.html">Tickets</a></li>
+             <li><a href="aboutus.html">Information</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="images.html">Image Gallery</a></li>
+            </ul>
+       </nav>
+<main class = "thirteen wide column">
+       <section>
+       <div class = "history">
+       <h1>History</h1>
+       </div>
+		   <button class = myButton>Press this button to see the team's history</button>
+       
+       <p id = "para">
+		   The club was founded in 1878, originally under the name Newton Heath LYR F.C. until 1902 when the club's name was changed to Manchester United. For over 100 years they have been the biggest and most well known football club in the world.</p>
+           
+       </section>
+       <br>
+
+
+<script id="tro-template" type="text/x-handlebars-template">
+<div class="ui container">
+<table class="ui striped selectable celled compact table" >
+<caption class = "caption">Trophy Cabinet</caption>
+<thead>
+<tr>
+<th>Competition</th>
+<th>Trophies</th>
+<th>Years</th>
+</tr>
+</thead>
+<tbody>
+{{#each this}}
+<tr>
+<td>{{competition}}</td>
+<td>{{trophies}} </td>
+<td>{{years}}</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+
+	</div>
+
+</script>
+
+<div id = "content-placeholder"></div>
+<button class="ui primary button" id="btncall">Add a Trophy</button>
+<div class="ui modal troModal">
+<i class="close icon"></i>
+<div class="header">
+<h1>Add a Trophy</h1>
+</div>
+
+<form name = 'newtroform' id = "newtroform" class = "ui form" >
+<div class="inline field">
+<label for = "competition" class="two wide field">Competition</label>
+<input type = "text" class="eight wide field"  name="competition" id ="competition" autofocus  required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)?"
+                title="Please enter the name of the competition">
+</div>
+
+<div class="inline field">
+<label for = "trophies" class="two wide field">Number of Trophies</label>
+<input type = "text" name="trophies" id="trophies" class="eight wide field" required pattern = "\d"
+                title="Please enter the number of trophies in numeric form">
+</div>
+
+<div class="inline field">
+<label for = "years" class="two wide field">Years</label>
+<input type = "text" name="years" id="years" class="eight wide field"
+                title="Please enter the years.">
+</div>
+	
+
+
+
+<input type="submit" id="submitbtn" class="ui primary button" value="Add Trophy">
+
+</form>
+</div>
+</div>
+<footer class = "ui sixteen wide column">
+           <p>
+           Copyright 2019 Manchester United
+           </p>
+      </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js'></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script src = "js/tro.js"></script>
+
+</body>
+</html>

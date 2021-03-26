@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html id = "tickets" lang = "en">
+<head>
+    <meta charset="UTF-8">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+      <link rel="stylesheet" href="css/style.css">
+    <title>Manchester United</title>
+    </head>
+   <body id = "index">
+       <div class="ui stackable grid container">
+     <header class = "sixteen wide column">
+         
+            <h1>Manchester United</h1>         </header>
+           <hr>
+           <br>
+<div id = "content" class = "ui row">
+    
+        <nav class="three wide column">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="team.html">Team</a></li>
+             <li><a href="tickets.html">Tickets</a></li>
+             <li><a href="aboutus.html">Information</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="images.html">Image Gallery</a></li>
+            </ul>
+       </nav>
+ 
+  
+       <main class = "thirteen wide column">
+           <div class = "buy">
+           <h2>Buy Tickets</h2>
+           </div>
+       <form action="success.html" method="get" id = "tickets" class="ui form" role="form">
+
+<div class = "inline field">
+    <label for="contactname" class="two wide field">Contact Name</label>
+    <input type="text" name="contactname" id="contactname" class="eight wide field" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" title="Please enter a name (Surname optional) with First Letter capitalised">
+</div>
+<div class = "inline field">
+    <label for="telephonenumber" class="two wide field">Telephone Number</label>
+    <input type="tel" name="telephonenumber" id="telephonenumber" class="eight wide field" required pattern="\d{9,12}" title = "Please enter a valid telephone number between 9 and 12 digits">
+</div>
+<div class = "inline field">
+    <label for = "email" class ="two wide field">Email Address</label>
+    <input type="email" name="email" id="email" class ="eight wide field" required pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" title = "Please enter a valid email address ">
+</div>
+<div class = "inline field">
+    <label for = "date" class="two wide field">What date is the match?</label>
+    <input type="date" name="date" id="date" class="eight wide field" value = "mm/dd/yyyy" required type = "Please enter a valid date">
+</div>
+<div class = "inline field">
+<label for = "region" class = "two wide field" >How many tickets do you require?</label>
+<select name="region" id="region" class ="eight wide field">
+<option value="one">One</option>
+<option value="two">Two</option>
+<option value="three">Three</option>
+<option value="four">Four</option>
+<option value="five">Five</option>
+
+
+</select>
+</div>
+<p>Please provide any other details you think will be useful to us in the text area below (it may save us calling or emailing you, and help avoid delays).</p>
+<div class = "inline field">
+<label for = "details"  >More details (as much as you think we'll need).</label>
+<textarea name="details" id= "details">
+</textarea>
+           </div>
+         
+  <h4 class="ui dividing header">Shipping Information</h4>
+           
+  <div class="field">
+    <label>Name</label>
+    <div class="two fields">
+      <div class="field">
+        <input type="text" name="shipping[first-name]" placeholder="First Name">
+      </div>
+      <div class="field">
+        <input type="text" name="shipping[last-name]" placeholder="Last Name">
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Billing Address</label>
+    <div class="fields">
+      <div class="twelve wide field">
+        <input type="text" name="shipping[address]" placeholder="Street Address">
+      </div>
+      <div class="four wide field">
+        <input type="text" name="shipping[address-2]" placeholder="Apt #">
+      </div>
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+
+    <div class="field">
+      <label>Country</label>
+      <select name="country" id="country" class ="eight wide field">
+<option value="UK">United Kingdom</option>
+<option value="IE">Ireland</option>
+  </select>
+</div>
+       </div>
+    </div>
+  
+  <h4 class="ui dividing header">Billing Information</h4>
+         <div class="field">
+      <label>Country</label>
+      <select name="country" id="country" class ="eight wide field">
+<option value="UK">United Kingdom</option>
+<option value="IE">Ireland</option>
+  </select>
+</div>
+  <div class="field">
+    <label>Card Type</label>
+    <select name="country" id="country" class ="eight wide field">
+     <option value="VISA">Visa</option>
+<option value="MC">Mastercard</option>
+  </select>
+    </div>
+  <div class="fields">
+    <div class="seven wide field">
+      <label>Card Number</label>
+      <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
+    </div>
+    <div class="three wide field">
+      <label>CVC</label>
+      <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+    </div>
+    <div class="six wide field">
+      <label>Expiration</label>
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="card[expire-month]">
+            <option value="">Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+        </div>
+      </div>
+    </div>
+  </div>
+
+         <input style="clear:left" type="submit" value ="Send Us the Info">
+<input type="reset" value = "Clear the Info">
+</form>
+       </main>
+    <br>
+    <footer class = "ui sixteen wide column">
+           <p>
+           Copyright 2019 Manchester United
+           </p>
+      </footer>
+          </div>
+           
+     <script> 
+     $(document).ready(function(){
+          $('.ui.dropdown') .dropdown();
+    });
+    </script>
+    </body>
+</html>
+       
+    

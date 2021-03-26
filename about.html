@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Manchester United</title>
+</head>
+<div class = "ui grid stackable container">
+<body id="index">
+	
+    
+        <header class="sixteen wide column">
+
+            <h1>Manchester United</h1>
+
+        </header>
+        <hr>
+        <br>
+        <div id="content" class="ui row">
+
+            <nav class="three wide column">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="team.html">Team</a></li>
+             <li><a href="tickets.html">Tickets</a></li>
+             <li><a href="aboutus.html">Information</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="images.html">Image Gallery</a></li>
+            </ul>
+			</nav>
+        <hr>
+			<main class="twelve wide column">
+				<p id = "aboutp1">Click 'Fade in' to see the text, then click 'Fade out' to make it disappear.</p>
+		<p id= "aboutp">The plugin for this website is used on the "Home" page, it is a countdown clock plugin, which is used to show the time until the next match. I downloaded the countdown.js file from github, which is the basis of how the clock works. I researched other jQuery countdown clocks to get some ideas on how to style it.  </p>
+<br>
+		
+				<button class="btn1">Fade out</button>
+				<button class="btn2">Fade in</button>
+			<hr>
+				<p id = "aboutp2">This is the code that is require to execute the plugin, click on the thumbnail to see it. </p>
+				<div id="gallery1">
+					<a href="images/plugincode.JPG" data-lightbox="flower-1" title = "Plugin Code"><img src="images/thumbnail/plugincode.jpg" width="120" height="90" alt="Plugin Code"></a></div>
+			</main>
+			<footer class="ui sixteen wide column">
+            <p>
+                Copyright 2019 Manchester United
+            </p>
+        </footer>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+$('#gallery img').css('opacity', 0.6);
+
+$('#gallery img').on({
+   mouseenter:function() {
+    $(this).css('opacity', 1);
+   },
+
+   mouseleave:function() {
+    $(this).css('opacity', 0.6);
+   }
+});
+	$(".btn1").click(function(){
+    $("#aboutp, #aboutp2").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $("#aboutp, #aboutp2").fadeIn();
+  });
+});
+</script>
+			
+	</div>
+	</body></div></html>

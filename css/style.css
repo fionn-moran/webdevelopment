@@ -1,0 +1,372 @@
+#index {
+    background-image: url(../images/stadium.jpg);
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+#aboutus {
+    background-image: url(../images/trophy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    color: red;
+    font-family: arial;
+}
+
+.history {
+    color: red;
+    font-family: arial;
+}
+nav {
+    margin-top: 25px;
+     height: 484px;
+}
+
+nav ul {
+    display: inline-block;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav li {
+  padding:0.9em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.8s ease;
+}
+
+nav a:hover {
+    background-color:  #fff;
+    color: #000;
+}
+
+nav a:active {
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    font-family: "Century Gothic";
+    text-align: center;
+    font-size: 20px
+}
+
+a:link {
+    color:red;
+}
+
+a:visited {
+    color:red;
+}
+
+#teampara {
+    font-family: "Arial";
+    color: white;
+   
+}
+
+.video {
+margin-right: auto;
+    margin-left: 150px;
+  
+}
+
+.ui.table thead th {
+    background-color: rgb(255,0,0);
+    color: white;
+    text-align: center;
+}
+
+.ui.striped.table > tr:nth-child(2n),
+.ui.striped.table tbody tr:nth-child(2n) {
+    background-color: rgba(255,0,0,0.3);
+}
+
+.ui.selectable.table tbody tr:hover,.ui.table tbody tr td.selectable:hover {
+    background-color: rgba(255,0,0,0.5);
+}
+
+.caption {
+    color: white;
+    font-size: 20px;
+    font-family: "Arial";
+    background-color: black;
+}
+
+#para {
+    color: black;
+    background-color: white;
+    font-family: "Century Gothic";
+    border-radius: 50%;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px; 
+	display: none;
+}
+
+.homewelcome {
+    color: white;
+    text-align: center;
+    font-family: "Century Gothic";
+}
+
+#teamimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20%;
+}
+
+ol li {
+    color: white;
+   
+}
+
+.allplayers {
+    display: inline-block;
+}
+
+.goalkeepers, .defenders, .midfielders, .forwards {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Century Gothic";
+    text-align: center;
+    
+}
+
+ol header {
+    color: white;
+ font-size: 30px;
+    text-decoration: underline;
+    font-family: "Century Gothic";
+}
+
+.homewelcome {
+font-size: 20px;
+    margin-right: 240px;
+}
+
+footer {
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+    position: fixed;
+}
+
+form#tickets label {  
+  font-weight: bold;  
+  font-size: small;  
+  color: white;  
+  line-height: 150%;
+}
+form {
+    color: white;
+}
+#gallery {
+  width:400px;
+}
+
+#tickets input:valid {
+    color: green;
+}
+
+/* Unmatched */
+#tickets input:invalid {
+    color: red;
+    border-color:red;
+}
+
+#tickets input[type=submit] {
+    color: white;
+    background-color: grey;
+    border: none;border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#tickets input[type=reset] {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+ui dividing header h4 {
+    color: white;
+}
+
+.start11 {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+
+
+.congrats {
+    color: blue;
+    
+}
+
+.buy {
+    color: red;
+}
+
+.ui.dividing.header {
+    color: red;
+}
+
+.recent {
+	color: red;
+	margin-right: 300px;
+	font-size: 16px;
+	margin-bottom: auto;
+}
+
+.pgallery {
+	font-size: 26px;
+	color: white;
+	font-family: Century Gothic;
+
+}
+
+.center {
+	position: ;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	text-align: center;
+	margin-left: 125px
+}
+
+.h1clock {
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: red;
+}
+
+h1 span {
+	font-size:3em;
+	line-height: .8em;
+	color: white;
+}
+
+#clock {
+	display: flex;
+	width: 570px;
+	margin: 0 auto;
+}
+
+#clock div {
+	position: relative;
+	width: 100px;
+	padding: 20px;
+	margin 0 5px;
+	background: #262626;
+	color: white;
+	border: 2px solid black;
+}
+
+#clock div:last-child {
+	background: red;
+	
+}
+
+#clock div:first-child {
+	background: red;
+	
+}
+
+#clock div:nth-child(3) {
+	background: red;
+	
+}
+
+#clock div span {
+	display: block;
+	text-align: center;
+}
+
+#aboutp, #aboutp2{
+	font-size: 20px;
+	color: white;
+	display: none;
+}
+
+#aboutp1 {
+	font-size: 20px;
+	color: white;
+}
+
+.orgteam {
+	text-align: center;
+	font-size: 20px;
+	color: red;
+	background-color: white;
+}
+
+.myButton, .btn1, .btn2 {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#btncall {
+	margin-top: 1em;
+	float: left;
+	background-color: red;
+}
+
+form {
+	padding: 1em;
+}
+
+#submitbtn {
+	background-color: red
+}

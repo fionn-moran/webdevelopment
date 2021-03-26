@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <script>
+    $('.url.example .ui.embed').embed();</script>
+    <meta charset="UTF-8">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+      <link rel="stylesheet" href="css/style.css">
+    <title>Manchester United</title>
+    </head>
+   <body id = "index">
+       <div class="ui stackable grid container">
+     <header class = "sixteen wide column">
+        
+            <h1>Manchester United</h1>
+         </header>
+           <br>
+<div id = "content" class = "ui row">
+    
+        <nav class="three wide column">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="team.html">Team</a></li>
+             <li><a href="tickets.html">Tickets</a></li>
+             <li><a href="aboutus.html">Information</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="images.html">Image Gallery</a></li>
+            </ul>
+       </nav>
+           
+      <hr>
+       <main class = "twelve wide column">
+     <div class = "video">
+       <iframe src="https://www.youtube.com/embed/VG965DID5qY?autoplay=1&mute=1&enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+  <br>
+ 
+      <div class = "homewelcome">
+         <p>Welcome to the website of Manchester United Football Club! You can use this website to view details of the team, purchase tickets to our upcoming matches, and view some information about the club including it's history. You can navigate these using the menu on the left!</p>
+      </div>
+		   
+		   
+	
+       </main>
+   
+	
+	<div class = "center">
+		   <h1 class = "h1clock"><span>Countdown!</span><br>This is how close we are to our next match!</h1>
+		   <div id = "clock"></div></div>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script src = "countdown.js"></script>
+	<script type = "text/javascript">
+	$('#clock').countdown('2020/7/5', function(event){
+	    var $this = $(this).html(event.strftime(''
+	    +'<div><span>%w</span><span>Weeks</span></div>'
+		+'<div><span>%d</span><span>Days</span></div>'
+	    +'<div><span>%H</span><span>Hours</span></div>'
+		+'<div><span>%M</span><span>Minutes</span></div>'			   
+		+'<div><span>%S</span><span>Seconds</span></div>'								  
+											   
+											 ))
+	})
+	</script>
+	  <footer class = "ui sixteen wide column">
+           <p>
+           Copyright 2019 Manchester United
+           </p>
+      </footer>
+       </div>
+       </div>
+   </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Team</title>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+	<link rel = "stylesheet" href="css/style.css">
+	
+</head>
+<body id = "index">
+	<div class = "ui grid stackable container">
+	   <header class="sixteen wide column">
+
+            <h1>Manchester United</h1>
+
+        </header>
+        <hr>
+        <br>
+		<div id="content" class="ui row">
+	  <nav class="three wide column">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="team.html">Team</a></li>
+             <li><a href="tickets.html">Tickets</a></li>
+             <li><a href="aboutus.html">Information</a></li>
+			 <li><a href="about.html">About</a></li>
+			 <li><a href="images.html">Image Gallery</a></li>
+            </ul>
+       </nav>
+	<hr>
+        <main class="twelve wide column">
+            <div id="teampara">
+                <p>The current squad consists of 31 players, including 4 goalkeepers, 12 defenders, 10 midfielders, and 5 forwards. The team is managed by Ole Gunnar Solskjaer, who is also a former player of the club. Ole played for Manchester United from 1996 to 2007.</p>
+            </div>
+			<br>
+			<p class = "orgteam">Move your mouse over the team photo to see the team from the 1960's</p>
+        
+<img id="teamimg" src="images/team.jpg" />
+			<div class="goalkeepers">
+                <header>Goalkeepers</header>
+                <ol>
+
+                    <li>David De Gea</li>
+                    <li>Lee Grant</li>
+                    <li>Sergio Romero</li>
+                    <li>Joel Pereira</li>
+                </ol>
+            </div>
+            <div class="defenders">
+
+                <header class="teamheader">Defenders</header>
+                <ol>
+                    <li>Victor Lindelof</li>
+                    <li>Eric Bailly</li>
+                    <li>Phil Jones</li>
+                    <li>Harry Maguire</li>
+                    <li>Chris Smalling</li>
+                    <li>Marcus Rojo</li>
+                    <li>Ashley Young </li>
+                    <li>Diogo Dalot</li>
+                    <li>Luke Shaw</li>
+                    <li>Timothy Fosu-Mensah</li>
+                    <li>Aaron Wan-Bissaka</li>
+                    <li>Axel Tuanzabe</li>
+                </ol>
+            </div>
+            <div class="midfielders">
+
+                <header class="teamheader">Midfielders</header>
+                <ol>
+                    <li>Paul Pogba</li>
+                    <li>Juan Mata</li>
+                    <li>Jesse Lingard</li>
+                    <li>Andreas Pereira</li>
+                    <li>Fred </li>
+                    <li>Daniel James</li>
+                    <li>Angel Gomes</li>
+                    <li>Nemanja Matic</li>
+                    <li>James Garner</li>
+                    <li>Scott McTominay</li>
+                </ol>
+            </div>
+            <div class="forwards">
+
+                <header class="teamheader">Forwards</header>
+                <ol>
+                    <li>Alexis Sanchez</li>
+                    <li>Anthony Martial</li>
+                    <li>Marcus Rashford</li>
+                    <li>Mason Greenwood</li>
+                    <li>Tahith Chong</li>
+                </ol>
+            </div>
+        </main>
+        <br>
+        
+        <br>
+	
+	
+<div class = "ui container">
+<h1>The Starting XI</h1>
+<div id ="players"></div>
+<script id="teamplayers" type="text/x-handlebars-template">
+
+
+<div class="ui centered link cards">
+{{#each this}}
+
+<div class="ui card">
+  <div class="image">
+    <img src="{{image}}">
+  </div>
+  <div class="content">
+    <a class="header">{{capitalise fullname}}</a>
+    <div class="meta">
+      <span class="date">{{age}} Years Old</span>
+    </div>
+    <div class="description">
+      {{name}} is {{job}} {{name}} has scored {{goals}} goals this season.
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      
+      {{position}}
+    </a>
+  </div>
+</div>
+
+{{/each}}
+</div>
+
+</script>
+</div>
+<footer class = "ui sixteen wide column">
+           <p>
+           Copyright 2019 Manchester United
+           </p>
+      </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js'></script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script src = "js/teamjs.js"></script>
+</body>
+</html>
